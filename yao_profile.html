@@ -22,6 +22,12 @@
       padding-bottom: 10px;
     }
 
+    .intro {
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
     .card {
       background: #1a1a1a;
       padding: 20px;
@@ -33,6 +39,7 @@
       color: #888;
       font-size: 12px;
       text-transform: uppercase;
+      margin-top: 10px;
     }
 
     .value {
@@ -44,34 +51,69 @@
       color: #555;
       font-style: italic;
     }
+
+    .actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+    }
+
+    a {
+      padding: 10px 15px;
+      border: 1px solid #444;
+      color: #f5f5f5;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    a:hover {
+      background: #222;
+      border-color: #6ea8fe;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>YAO Profile Output Layer</h1>
 
-    <div class="card">
-      <div class="label">Status</div>
-      <div class="value">Live Scaffold Active</div>
+    <h1>Yusof Abu Othman — Profile Record</h1>
+
+    <div class="intro">
+      Assalamualaikum W.B.T.<br><br>
+      This page reflects the current structured record of your professional profile.<br><br>
+      You may review the information below and update or enrich it through the input system.
     </div>
 
     <div class="card">
-      <div class="label">Profile Name</div>
-      <div class="value empty">No data yet</div>
+      <div class="label">Status</div>
+      <div class="value">Profile Record Initialised</div>
+    </div>
 
-      <div class="label">Core Attributes</div>
-      <div class="value empty">Waiting for capture input</div>
+    <div class="card">
+      <div class="label">Name</div>
+      <div class="value">Yusof Abu Othman</div>
 
-      <div class="label">Structured Intelligence</div>
-      <div class="value empty">Pending transformation from yao.html</div>
+      <div class="label">Professional Summary</div>
+      <div class="value empty">Awaiting structured input</div>
+
+      <div class="label">Career & Roles</div>
+      <div class="value empty">To be enriched via input layer</div>
+
+      <div class="label">Institutional & Strategic Contributions</div>
+      <div class="value empty">Pending data capture</div>
     </div>
 
     <div class="card">
       <div class="label">System Note</div>
       <div class="value">
-        This layer is ready to receive structured profile data from the capture system.
+        This is a living profile. All updates are based on submitted and verified inputs.
       </div>
+    </div>
+
+    <div class="actions">
+      <a href="yao.html">Update Profile</a>
+      <a href="index.html">Return to Entry</a>
     </div>
 
   </div>
