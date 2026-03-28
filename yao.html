@@ -8,9 +8,16 @@
 
 <body style="font-family: Arial; padding: 40px;">
 
+  <form name="yao-profile" netlify hidden>
+  <input type="text" name="name">
+  <input type="text" name="identity">
+  <input type="text" name="goal">
+  <textarea name="notes"></textarea>
+</form>
+  
   <h1>YAO Profile Capture</h1>
 
-  <form name="yao-profile" method="POST" data-netlify="true">
+  <form name="yao-profile" method="POST" netlify action="/yao_profile.html">
 
     <input type="hidden" name="form-name" value="yao-profile" />
 
