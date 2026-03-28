@@ -2,129 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>YAO Profile Intelligence Update</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b0f14;
-      color: #e6edf3;
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      max-width: 800px;
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 13px;
-      opacity: 0.7;
-      margin-bottom: 30px;
-      line-height: 1.5;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    label {
-      font-size: 13px;
-      opacity: 0.9;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #333;
-      background: #111823;
-      color: #e6edf3;
-      font-size: 14px;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 12px;
-      background: #1c2633;
-      color: #e6edf3;
-      border: 1px solid #444;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    button:hover {
-      border-color: #6ea8fe;
-      background: #243447;
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 11px;
-      opacity: 0.5;
-    }
-
-    a {
-      color: #6ea8fe;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAO Capture</title>
 </head>
 
-<body>
+<body style="font-family: Arial; padding: 40px;">
 
-  <div class="container">
+  <h1>YAO Profile Capture</h1>
 
-    <h1>YAO Intelligence Profile Update System</h1>
+  <form name="yao-profile" method="POST" data-netlify="true">
 
-    <div class="subtitle">
-      This section allows structured updates to the institutional profile record.
-      Provide accurate, contextual, and complete information where possible.
-    </div>
+    <input type="hidden" name="form-name" value="yao-profile" />
 
-    <form name="yao-profile" method="POST" data-netlify="true">
+    <p>
+      <label>Name<br>
+        <input type="text" name="name" required />
+      </label>
+    </p>
 
-      <label>Full Name / Reference Name</label>
-      <input type="text" name="name" placeholder="Enter full name" required>
+    <p>
+      <label>Core Identity<br>
+        <input type="text" name="identity" />
+      </label>
+    </p>
 
-      <label>Current Role / Position</label>
-      <input type="text" name="role">
+    <p>
+      <label>Primary Goal<br>
+        <input type="text" name="goal" />
+      </label>
+    </p>
 
-      <label>Organisational Affiliation</label>
-      <input type="text" name="organisation">
+    <p>
+      <label>Notes<br>
+        <textarea name="notes"></textarea>
+      </label>
+    </p>
 
-      <label>Career Summary / Background Update</label>
-      <textarea name="summary" placeholder="Add or update contextual profile information"></textarea>
+    <p>
+      <button type="submit">Submit Profile</button>
+    </p>
 
-      <label>Additional Notes / Context</label>
-      <textarea name="notes"></textarea>
-
-      <button type="submit">Submit Profile Update</button>
-
-    </form>
-
-    <div class="footer">
-      SYRIUS PRIME — Structured Intelligence Capture Layer
-    </div>
-
-    <br>
-    <a href="index.html">← Return to Home</a>
-
-  </div>
+  </form>
 
 </body>
 </html>
