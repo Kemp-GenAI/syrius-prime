@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SYRIUS PRIME</title>
-
+  <meta charset="UTF-8">
+  <title>Yusof Abu Othman Profile System</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #e6edf3;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: radial-gradient(circle at top, #071225, #02040a 70%);
-      color: white;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-    }
-
-    /* BACKGROUND GLOW FIELD */
-    .glow {
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle,
-        rgba(0,180,255,0.35),
-        rgba(0,80,255,0.15),
-        transparent 70%);
-      filter: blur(50px);
-      animation: pulse 6s ease-in-out infinite;
-      z-index: 0;
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      position: relative;
+      min-height: 100vh;
       text-align: center;
-      z-index: 2;
+      padding: 40px;
+      line-height: 1.6;
     }
 
-    /* TITLE */
-    h1 {
-      font-size: 4rem;
-      letter-spacing: 6px;
-      margin: 0;
-
-      background: linear-gradient(90deg, #7dd3ff, #2b7cff, #a5f3fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      text-shadow: 0 0 25px rgba(0,150,255,0.35);
+    .container {
+      max-width: 700px;
     }
 
-    /* SUBTITLE */
-    p {
-      margin-top: 12px;
-      font-size: 0.95rem;
-      opacity: 0.75;
-      letter-spacing: 2px;
+    .greeting {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
 
-    /* STATUS LINE */
-    .status {
-      margin-top: 6px;
-      font-size: 0.75rem;
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .welcome {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .purpose {
+      font-size: 13px;
+      opacity: 0.8;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    a {
+      padding: 12px 18px;
+      border: 1px solid #444;
+      color: #e6edf3;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.2s ease;
+      font-size: 14px;
+      min-width: 220px;
+    }
+
+    a:hover {
+      background: #1c2633;
+      border-color: #6ea8fe;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 11px;
       opacity: 0.5;
-    }
-
-    /* PULSE ANIMATION */
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.55; }
-      50% { transform: scale(1.15); opacity: 0.9; }
-      100% { transform: scale(1); opacity: 0.55; }
-    }
-
-    /* subtle vignette */
-    body::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.7));
-      z-index: 1;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="glow"></div>
-
   <div class="container">
-    <h1>SYRIUS PRIME</h1>
-    <p>Data Capture & Intelligence Layer</p>
-    <div class="status">Landing system online • stable</div>
+
+    <div class="greeting">
+      Assalamualaikum W.B.T.
+    </div>
+
+    <div class="name">
+      Dear Tn. Hj. Yusof Abu Othman
+    </div>
+
+    <div class="welcome">
+      Welcome to a specially created profile space designed to consolidate and update your professional and institutional record.
+      <br><br>
+      This system allows you to review, correct, and enrich the information we currently hold, ensuring accuracy and completeness, including personal context where public records may be limited or incomplete.
+    </div>
+
+    <div class="purpose">
+      This is a living profile system.<br><br>
+      You may review existing career records, add missing details, correct inaccuracies, and provide contextual background not captured in public sources.
+    </div>
+
+    <div class="buttons">
+      <a href="yao.html">Review & Edit Your Profile</a>
+      <a href="#">View Current Recorded Profile</a>
+    </div>
+
+    <div class="footer">
+      System Prototype — Living Institutional Profile Interface
+    </div>
+
   </div>
 
 </body>
