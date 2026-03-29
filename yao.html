@@ -8,16 +8,18 @@
 
 <body style="font-family: Arial; padding: 40px;">
 
+  <!-- Netlify hidden form detector (safe + standard) -->
   <form name="yao-profile" netlify hidden>
-  <input type="text" name="name">
-  <input type="text" name="identity">
-  <input type="text" name="goal">
-  <textarea name="notes"></textarea>
-</form>
-  
+    <input type="text" name="name">
+    <input type="text" name="identity">
+    <input type="text" name="goal">
+    <textarea name="notes"></textarea>
+  </form>
+
   <h1>YAO Profile Capture</h1>
 
-  <form name="yao-profile" method="POST" netlify action="/yao_profile.html">
+  <!-- Main visible form -->
+  <form name="yao-profile" method="POST" netlify>
 
     <input type="hidden" name="form-name" value="yao-profile" />
 
