@@ -8,7 +8,7 @@
 
 <body style="font-family: Arial; padding: 40px;">
 
-  <!-- Netlify hidden form detector (safe + standard) -->
+  <!-- Netlify hidden form detector -->
   <form name="yao-profile" netlify hidden>
     <input type="text" name="name">
     <input type="text" name="identity">
@@ -19,7 +19,7 @@
   <h1>YAO Profile Capture</h1>
 
   <!-- Main visible form -->
-  <form name="yao-profile" method="POST" netlify>
+  <form name="yao-profile" method="POST" netlify action="/thank-you.html">
 
     <input type="hidden" name="form-name" value="yao-profile" />
 
